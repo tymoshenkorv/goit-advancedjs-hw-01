@@ -1,7 +1,6 @@
 console.log('Gallery');
-// Описаний в документації
+
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
@@ -80,10 +79,8 @@ gallery.innerHTML = images
   .join('');
 
 console.log(SimpleLightbox);
-const lightbox = new SimpleLightbox('.gallery-link', {
+new SimpleLightbox('.gallery-link', {
   overlay: true,
   captionsData: 'alt',
   captionDelay: 250,
 });
-
-// lightbox.refresh();

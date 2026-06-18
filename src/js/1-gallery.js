@@ -51,19 +51,6 @@ const images = [
   },
 ];
 
-/*const images = Array.from({ length: 9 }, (_, index) => {
-  const imageNumber = index + 1;
-  const imagePath = new URL(`../img/thumbs/${imageNumber}.jpg`, import.meta.url)
-    .href;
-
-  return {
-    preview: imagePath,
-    original: imagePath,
-    description: `Gallery image ${imageNumber}`,
-  };
-});
-*/
-
 const gallery = document.querySelector('.gallery');
 
 gallery.innerHTML = images

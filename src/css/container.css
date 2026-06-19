@@ -1,19 +1,70 @@
 /* Styles for Mobile devices */
+@import url('./reset.css');
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+body {
+  background-color: light-dark(#ffffff, #303030);
+  color: light-dark(#303030, #ffffff);
+}
+body[data-color-scheme='dark'] {
+  color-scheme: dark;
+}
+body[data-color-scheme='light'] {
+  color-scheme: light;
 }
 /* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-}
+} */
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
+} */
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: light-dark(#303030, #ffffff);
+  transition: left 250ms linear;
+}
+
+.toggle-checkbox:checked + .toggle-container .toggle-icon {
+  left: calc(100% - 18px);
+}
+.toggle-container {
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid light-dark(#303030, #ffffff);
+  cursor: pointer;
 }

@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery</title>
   <link rel="stylesheet" href="./css/styles.css" />
+  <script type="module" src="./js/1-gallery.js"></script>
 </head>
 
-<body>
-  <header class="header">
+<!-- <header class="header">
     <div class="container">
       <nav class="nav">
         <div class="gallery-header">
@@ -19,7 +19,26 @@
         </div>
       </nav>
     </div>
+  </header> -->
+
+<body data-color-scheme='light'>
+  <header class="header">
+    <div class="container page-header-container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="./1-gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="./2-form.html">Form</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <input class="toggle-checkbox visually-hidden js-toggle-checkbox" type="checkbox" id="theme-toggle" />
+        <label class="toggle-container" for="theme-toggle">
+          <span class="toggle-icon"></span>
+        </label>
+      </div>
+    </div>
   </header>
+
 
   <main>
     <div class="container">
@@ -28,7 +47,7 @@
 
   </main>
 
-  <script type="module" src="./js/1-gallery.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,10 @@
 .header {
   padding: 20px 0;
 }
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
 .gallery-header {
   display: flex;
   flex-direction: column;
@@ -11,7 +15,7 @@
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  flex: 1;
 }
 .nav-logo {
   display: inline-flex;
@@ -22,8 +26,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: auto;
   gap: 40px;
+}
+.theme-toggle {
+  margin-left: auto;
 }
 .nav-link {
   position: relative;

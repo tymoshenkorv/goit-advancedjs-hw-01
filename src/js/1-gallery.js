@@ -5,48 +5,48 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
-    preview: '../img/thumbs/1.jpg',
-    original: '../img/originals/1.jpg',
+    preview: new URL('../img/thumbs/1.jpg', import.meta.url).href,
+    original: new URL('../img/originals/1.jpg', import.meta.url).href,
     description: 'Image 1',
   },
   {
-    preview: '../img/thumbs/2.jpg',
-    original: '../img/originals/2.jpg',
+    preview: new URL('../img/thumbs/2.jpg', import.meta.url).href,
+    original: new URL('../img/originals/2.jpg', import.meta.url).href,
     description: 'Image 2',
   },
   {
-    preview: '../img/thumbs/3.jpg',
-    original: '../img/originals/3.jpg',
+    preview: new URL('../img/thumbs/3.jpg', import.meta.url).href,
+    original: new URL('../img/originals/3.jpg', import.meta.url).href,
     description: 'Image 3',
   },
   {
-    preview: '../img/thumbs/4.jpg',
-    original: '../img/originals/4.jpg',
+    preview: new URL('../img/thumbs/4.jpg', import.meta.url).href,
+    original: new URL('../img/originals/4.jpg', import.meta.url).href,
     description: 'Image 4',
   },
   {
-    preview: '../img/thumbs/5.jpg',
-    original: '../img/originals/5.jpg',
+    preview: new URL('../img/thumbs/5.jpg', import.meta.url).href,
+    original: new URL('../img/originals/5.jpg', import.meta.url).href,
     description: 'Image 5',
   },
   {
-    preview: '../img/thumbs/6.jpg',
-    original: '../img/originals/6.jpg',
+    preview: new URL('../img/thumbs/6.jpg', import.meta.url).href,
+    original: new URL('../img/originals/6.jpg', import.meta.url).href,
     description: 'Image 6',
   },
   {
-    preview: '../img/thumbs/7.jpg',
-    original: '../img/originals/7.jpg',
+    preview: new URL('../img/thumbs/7.jpg', import.meta.url).href,
+    original: new URL('../img/originals/7.jpg', import.meta.url).href,
     description: 'Image 7',
   },
   {
-    preview: '../img/thumbs/8.jpg',
-    original: '../img/originals/8.jpg',
+    preview: new URL('../img/thumbs/8.jpg', import.meta.url).href,
+    original: new URL('../img/originals/8.jpg', import.meta.url).href,
     description: 'Image 8',
   },
   {
-    preview: '../img/thumbs/9.jpg',
-    original: '../img/originals/9.jpg',
+    preview: new URL('../img/thumbs/9.jpg', import.meta.url).href,
+    original: new URL('../img/originals/9.jpg', import.meta.url).href,
     description: 'Image 9',
   },
 ];
